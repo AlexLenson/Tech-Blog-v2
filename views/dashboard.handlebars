@@ -1,0 +1,29 @@
+<div class="columns">
+    <div class="column is-6">
+    {{#each posts }}
+    {{log "posts homepage" posts}}
+    <div class="box">
+        <div class="content">
+            <h3 class="title is-3 has-text-centered">{{title}}</h3>
+            <p class="has-text-centered">{{content}}</p>
+            <p class="has-text-centered">{{user.username}}</p>
+            <p class="has-text-centered">{{ date_created}}</p>
+        </div>
+        <div class="content">
+            <a href="/dashboard/post/{{id}}">Edit</a>
+        </div>
+    </div>
+    {{/each}}
+    </div>
+    <div class="column is-6">
+        <!---CREATE INPUT FOR TITLE INPUT FOR CONTENT AND BUTTON FOR USERS TO CREATE NEW POSTS--->
+        <!----MAKE SURE CLASSES AND IDS MATS THE ONES ON newPost.JS---->
+    </div>
+</div>
+
+<footer class="footer flex-row justify-center">
+    <a href="/dashboard/new">➕ New Post</a>
+</footer>
+
+
+<script src="/js/newPost.js"></script>

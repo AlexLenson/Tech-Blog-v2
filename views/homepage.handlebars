@@ -1,0 +1,15 @@
+<div class="container">
+    {{#each posts }}
+    {{log "posts homepage" posts}}
+    <div class="box">
+        <div class="content">
+            <h3 class="title is-3 has-text-centered">{{title}}</h3>
+            <p class="has-text-centered">{{user.username}}</p>
+            <p class="has-text-centered">{{ date_created}}</p>
+        </div>
+        <div class="content">
+            <a href="/post/{{id}}">Read</a>
+        </div>
+    </div>
+    {{/each}}
+</div>

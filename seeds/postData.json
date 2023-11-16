@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "title":"JavaScript vs Python",
+        "content":"Which Language do you think is best? Comment Below!",
+        "user_id":1
+    },
+    {
+        "id":2 ,
+        "title": "Flexbox vs CSS Grid",
+        "content": "I am Flexbox all the way. The code is cleaner and it is easy to implement. What do you think?",
+        "user_id":2
+    },
+    {
+        "id":3 ,
+        "title": "Arrays",
+        "content": "I have been thinking about th structure of Arrays. I find that once I learned about APIs the most common structure is an array of Objects.",
+        "user_id":3
+    },
+    {
+        "id":4 ,
+        "title": "Backend vs Frontend",
+        "content": "I would like to know which one you prefer. I am partial to backend, it makes sense to me.",
+        "user_id":4
+    }
+]

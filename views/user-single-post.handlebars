@@ -1,0 +1,22 @@
+<div class="columns is-centered mt-6">
+    <div class="column is-6">
+        <div class="card">
+            <div class="card-header">
+                <textarea class="textarea">{{posts.title}}</textarea>
+            </div>
+            <div class="card-content">
+                <textarea class="textarea"> {{posts.content}}</textarea>
+    
+            </div>
+            <footer class="card-footer">
+                <!---ADD IDS ON A TAGS THAT ARE IN EDIT.JS----->
+                <a href="#" data-id="{{posts.id}}" class="card-footer-item">Edit</a>
+                <a href="#" data-id="{{posts.id}}" class="card-footer-item">Delete</a>
+            </footer>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="/js/edit.js"></script>

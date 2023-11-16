@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "content":"I love Javascript it is less strict than the OOP language that is Python",
+        "user_id":2,
+        "post_id":1
+    },
+    {
+        "id": 2,
+        "content": "I see your point but if you are comfortable with CSS Grid you can manipulate the space in your viewport much better.",
+        "user_id":1 ,
+        "post_id":2 
+    },
+    {
+        "id":3 ,
+        "content": "Yeah I would be inclined to agree",
+        "user_id":4 ,
+        "post_id":3 
+    },
+    {
+        "id": 4,
+        "content": "The backend scares me!",
+        "user_id": 3,
+        "post_id":4 
+    }
+]

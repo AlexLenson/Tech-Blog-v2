@@ -1,0 +1,40 @@
+<div class="columns is-centered mt-6">
+    <div class="column is-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-header-title">{{posts.title}}</h5>
+                </div>
+                <div class="card-content">
+                   <p class="has-text-centered"> {{posts.content}}</p>
+                   <p class="has-text-centered">
+                    <small>Written by {{posts.user.username}}</small>
+                    <small>on {{posts.date_created}}</small>
+                   </p>
+                </div>
+        </div>
+    </div>
+    <!----CREATE INPUT AN BUTTON FOR USERS TO COMMENT --->
+    <!----MAKE SURE CLASSES AND IDS MATS THE ONES ON COMMENT.JS---->
+
+
+
+
+
+</div>
+<div class="columns is-centered">
+<div class="column is-6">
+        {{#if posts.comments}}
+        {{#each posts.comments}}
+        <div class="box">
+            <div class="content">
+                <div class="card-header">
+                    <p><strong>{{user.username}}</strong></p>
+                </div>
+                <p>{{content}}</p>
+            </div>
+        
+        </div>
+        {{/each}}
+        {{/if}}
+</div>
+</div>
