@@ -14,7 +14,7 @@ const newPostFormHandler = async (event) => {
         headers: { 'Content-Type': 'application/json' },
     })
     if (response.ok) {
-        closeModal()
+
         window.location.reload()
     } else {
         alert("oops! Something went wrong")

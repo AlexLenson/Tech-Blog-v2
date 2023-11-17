@@ -9,8 +9,8 @@ router.post("/", withAuth, async (req, res) => {
         // only the content is being saved to the database, not post_id or user_id
         const newComment = await Comment.create({
         content: req.body.content,
-            post_id: req.body.postId,
-          user_id: req.session.userId
+            post_id: req.body.post_id,
+          user_id: req.session.user_id
         })
         //   console.log(newComment, "where is my user??")
         res.status(200).json(newComment)

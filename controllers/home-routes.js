@@ -30,7 +30,7 @@ router.get("/post/:id", async (req, res) => {
 
         const posts = postData.get({ plain: true })
 
-        res.render("single-post", {posts})
+        res.render("single-post", {posts, logged_in:req.session.logged_in})
 
     } catch {
         res.status(500).json({ message: "something went wrong" })
