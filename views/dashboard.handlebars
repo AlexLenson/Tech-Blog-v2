@@ -21,9 +21,32 @@
     </div>
 </div>
 
-<footer class="footer flex-row justify-center">
+    <div class="column is-6">
+    <form id="new-comment-form" class="card">
+        <div class="card-header">
+            <h3>Add New Post</h3>
+        </div>
+    
+        <div class="card-body">
+            <input type="hidden" id="postTitle" name="postTitle" data-id="{{posts.id}}" />
+    
+            <label class="form-label" for="newPostTitle">Post Title</label>
+    
+            <textarea id="newPostTitle" name="newPostTitle" class="form-input"></textarea>
+    
+            <label class="form-label" for="newPostText">Post Content</label>
+    
+            <textarea id="newPostText" name="newPostText" class="form-input"></textarea>
+    
+            <button id="savePost" type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+    </div>
+    </div>
+
+{{!-- <footer class="footer flex-row justify-center">
     <a href="/dashboard/new">➕ New Post</a>
-</footer>
+</footer> --}}
 
 
 <script src="/js/newPost.js"></script>

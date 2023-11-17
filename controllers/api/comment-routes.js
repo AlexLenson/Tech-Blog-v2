@@ -6,6 +6,7 @@ const withAuth = require("../../utils/auth")
 router.post("/", withAuth, async (req, res) => {
     try {
         // console.log(req.body, req.session.userId ," is the user present here?");
+        // only the content is being saved to the database, not post_id or user_id
         const newComment = await Comment.create({
         content: req.body.content,
             post_id: req.body.postId,

@@ -9,6 +9,8 @@ const createComment = async (event) => {
     console.log("content:", content);
     console.log("post_id:", post_id);
 
+    // i can log content and post_id, but post_id and user_id arent showing up in the database!
+
     const response = await fetch(`/api/comments`, {
         method: "POST",
         body: JSON.stringify({

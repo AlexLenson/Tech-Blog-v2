@@ -2,16 +2,17 @@
     <div class="column is-6">
         <div class="card">
             <div class="card-header">
-                <textarea class="textarea">{{posts.title}}</textarea>
+                <textarea class="textarea" id="upTitle">{{posts.title}}</textarea>
             </div>
             <div class="card-content">
-                <textarea class="textarea"> {{posts.content}}</textarea>
+                <textarea class="textarea" id="upBody"> {{posts.content}}</textarea>
     
             </div>
             <footer class="card-footer">
                 <!---ADD IDS ON A TAGS THAT ARE IN EDIT.JS----->
-                <a href="#" data-id="{{posts.id}}" class="card-footer-item">Edit</a>
-                <a href="#" data-id="{{posts.id}}" class="card-footer-item">Delete</a>
+                {{!-- added classes/ids but its not updating? --}}
+                <a href="#" data-id="{{posts.id}}" class="card-footer-item upPost">Edit</a>
+                <a href="#" data-id="{{posts.id}}" class="card-footer-item delPost">Delete</a>
             </footer>
         </div>
     </div>
