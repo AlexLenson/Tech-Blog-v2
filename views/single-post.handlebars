@@ -13,26 +13,6 @@
                 </div>
         </div>
     </div>
-    <!----CREATE INPUT AN BUTTON FOR USERS TO COMMENT --->
-    <!----MAKE SURE CLASSES AND IDS MATS THE ONES ON COMMENT.JS---->
-
-    <form id="new-comment-form" class="card">
-        <div class="card-header">
-            <h3>Add New Comment</h3>
-        </div>
-    
-        <div class="card-body">
-            <input type="hidden" name="post-id" value="{{post.id}}" />
-    
-            <label class="form-label" for="comment-body">Comment</label>
-    
-            <textarea name="comment-body" class="form-input"></textarea>
-    
-            <button type="submit" class="btn">Submit</button>
-        </div>
-    </form>
-    </div>
-
 
 
 </div>
@@ -53,3 +33,30 @@
         {{/if}}
 </div>
 </div>
+
+    <!----CREATE INPUT AN BUTTON FOR USERS TO COMMENT --->
+    <!----MAKE SURE CLASSES AND IDS MATS THE ONES ON COMMENT.JS---->
+    
+<div class="columns is-centered">
+    <div class="column is-6">
+    <form id="new-comment-form" class="card">
+        <div class="card-header">
+            <h3>Add New Comment</h3>
+        </div>
+    
+        <div class="card-body">
+            <input type="hidden" id="postTitle" name="postTitle" data-id="{{posts.id}}" />
+    
+            <label class="form-label" for="commentBody">Comment</label>
+    
+            <textarea id="commentBody" name="commentBody" class="form-input"></textarea>
+    
+            <button id="submit-comment-btn" type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+    </div>
+    </div>
+</div>
+
+
+<script src="/js/comment.js"></script>

@@ -1,10 +1,13 @@
 const createComment = async (event) => {
 
+    event.preventDefault();
+
     const content = document.querySelector('#commentBody').value
     const post_id = document.querySelector("#postTitle").getAttribute("data-id")
 
-
     console.log(commentBody, postTitle);
+    console.log("content:", content);
+    console.log("post_id:", post_id);
 
     const response = await fetch(`/api/comments`, {
         method: "POST",
@@ -22,5 +25,5 @@ const createComment = async (event) => {
     }
 }
     
-    document.querySelector("").
+document.querySelector("#submit-comment-btn").
     addEventListener("click", createComment)
