@@ -18,31 +18,32 @@
     <div class="column is-6">
         <!---CREATE INPUT FOR TITLE INPUT FOR CONTENT AND BUTTON FOR USERS TO CREATE NEW POSTS--->
         <!----MAKE SURE CLASSES AND IDS MATS THE ONES ON newPost.JS---->
+                <form id="new-comment-form" class="card">
+                    <div class="card-header">
+                        <h3><strong>Add New Post</strong></h3>
+                    </div>
+            
+                    <div class="card-body">
+                        <div class="field">
+                            <label class="form-label" for="newPostTitle" ></label>
+                            <textarea id="newPostTitle" name="newPostTitle" class="textarea" placeholder="Add a post title..."></textarea>
+                        </div>
+                    
+                        <div class="field">
+                            <label class="form-label" for="newPostText" > </label>
+                            <textarea id="newPostText" name="newPostText" class="textarea" placeholder="Add the post content..."></textarea>
+                        </div>
+                    
+                        <button id="savePost" type="submit" class="button is-small is-info">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+
     </div>
 </div>
 
-    <div class="column is-6">
-    <form id="new-comment-form" class="card">
-        <div class="card-header">
-            <h3>Add New Post</h3>
-        </div>
-    
-        <div class="card-body">
-            <input type="hidden" id="postTitle" name="postTitle" data-id="{{posts.id}}" />
-    
-            <label class="form-label" for="newPostTitle">Post Title</label>
-    
-            <textarea id="newPostTitle" name="newPostTitle" class="form-input"></textarea>
-    
-            <label class="form-label" for="newPostText">Post Content</label>
-    
-            <textarea id="newPostText" name="newPostText" class="form-input"></textarea>
-    
-            <button id="savePost" type="submit" class="btn">Submit</button>
-        </div>
-    </form>
-    </div>
-    </div>
+
 
 {{!-- <footer class="footer flex-row justify-center">
     <a href="/dashboard/new">➕ New Post</a>
